@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Timekeeper</string>
+    <string name="got_it">Got It!</string>
+    <string name="who_is_timekeeper">The main purpose of the Timekeeper
+        role is to help the meeting run on schedule by timing each of the
+        participants according to the timings given on the agenda.</string>
+    <string name="timekeeper_responsibilities">
+        The main responsibilities of the Timekeeper are: \n
+    - To explain the purpose of the Timekeeper role during the meeting.\n
+    - To time each participant and operate the green, amber and red “traffic lights” to help them keep to time.\n
+    - To provide timing reports when prompted by the Toastmaster.
+    </string>
+</resources>

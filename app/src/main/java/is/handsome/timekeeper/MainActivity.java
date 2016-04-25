@@ -2,13 +2,14 @@ package is.handsome.timekeeper;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.Visibility;
+import android.view.ActionProvider;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-    View firstTip;
-    View secondTip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,13 +17,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void changeTip(View view) {
+    public void changeTipFunc(View view) {
 
-        firstTip = (LinearLayout) findViewById(R.id.first_tip_layout);
-        firstTip.setVisibility(View.GONE);
+        View tipOne = findViewById(R.id.first_tip_layout);
+        View tipTwo = findViewById(R.id.second_tip_layout);
+        View tipThree = findViewById(R.id.third_tip_layout);
 
-        secondTip = (LinearLayout) findViewById(R.id.second_tip_layout);
-        secondTip.setVisibility(View.VISIBLE);
+
+        if (tipOne.getVisibility() == View.GONE && tipTwo.getVisibility() == View.VISIBLE) {
+
+            tipTwo.setVisibility(View.GONE);
+            tipThree.setVisibility(View.VISIBLE);
+        }
+        else {
+
+            if (tipOne.getVisibility() == View.VISIBLE) {
+
+                tipOne.setVisibility(View.GONE);
+                tipTwo.setVisibility(View.VISIBLE);
+            }
+        }
+
     }
 }
+
+
+
+
 

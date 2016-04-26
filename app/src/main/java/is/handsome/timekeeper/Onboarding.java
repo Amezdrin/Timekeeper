@@ -40,7 +40,6 @@ public class Onboarding extends AppCompatActivity {
                 doneBtn.setVisibility(View.INVISIBLE);
             }
         }
-
     }
 
     /**This opens main screen by click on Got It! button*/
@@ -49,9 +48,7 @@ public class Onboarding extends AppCompatActivity {
         Intent openMainScreen = new Intent(Onboarding.this, MainScreenActivity.class);
         startActivity(openMainScreen);
         finish();
-
     }
-
 }
 
 

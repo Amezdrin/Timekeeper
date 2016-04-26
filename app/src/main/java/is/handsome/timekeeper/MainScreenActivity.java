@@ -28,7 +28,6 @@ public class MainScreenActivity extends AppCompatActivity implements AdapterView
         dropDown.setAdapter(adapter);
 
         dropDown.setOnItemSelectedListener(this);
-
     }
 
     @Override

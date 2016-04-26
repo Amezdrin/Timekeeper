@@ -1,5 +1,6 @@
 package is.handsome.timekeeper;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Visibility;
@@ -9,7 +10,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class Onboarding extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**This switches onboarding screens by click on Next button*/
     public void changeTipFunc(View view) {
 
         View tipOne = findViewById(R.id.first_tip_layout);
@@ -46,6 +48,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    /**This opens main screen by click on Got It! button*/
+    public void openMainScreen(View view) {
+
+        Intent openMainScreen = new Intent(Onboarding.this, MainScreenActivity.class);
+        startActivity(openMainScreen);
+        finish();
+
+    }
+
+
 }
 
 

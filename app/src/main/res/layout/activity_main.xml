@@ -126,7 +126,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/gotItBtn"
-        android:onClick="changeTipFunc"
+        android:onClick="openMainScreen"
         android:visibility="invisible"
         />
 

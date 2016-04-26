@@ -4,12 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/skipBtn"
+        android:onClick="openMainScreen"
+        android:background="#00ffffff"
+        android:backgroundTint="#00ffffff"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"/>
+
     <ScrollView android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skipBtn"
+        >
+
         <LinearLayout
             android:orientation="vertical" android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/first_tip_layout"
+            android:paddingBottom="16dp"
             >
 
             <TextView
@@ -35,12 +53,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skipBtn">
         <LinearLayout
             android:orientation="vertical" android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/second_tip_layout"
             android:visibility="invisible"
+            android:paddingBottom="16dp"
             >
 
             <TextView
@@ -66,12 +86,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skipBtn">
         <LinearLayout
             android:orientation="vertical" android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/third_tip_layout"
             android:visibility="invisible"
+            android:paddingBottom="16dp"
             >
 
             <TextView
@@ -129,6 +151,5 @@
         android:onClick="openMainScreen"
         android:visibility="invisible"
         />
-
 
 </RelativeLayout>

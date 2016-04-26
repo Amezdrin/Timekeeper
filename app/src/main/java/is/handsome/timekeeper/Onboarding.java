@@ -3,19 +3,14 @@ package is.handsome.timekeeper;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.transition.Visibility;
-import android.view.ActionProvider;
 import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 public class Onboarding extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.onboarding);
     }
 
     /**This switches onboarding screens by click on Next button*/
@@ -26,7 +21,6 @@ public class Onboarding extends AppCompatActivity {
         View tipThree = findViewById(R.id.third_tip_layout);
         View nextBtn = findViewById(R.id.changeTipBtn);
         View doneBtn = findViewById(R.id.gotItBtn);
-
 
         if (tipOne.getVisibility() == View.GONE && tipTwo.getVisibility() == View.VISIBLE) {
 
@@ -57,7 +51,6 @@ public class Onboarding extends AppCompatActivity {
         finish();
 
     }
-
 
 }
 

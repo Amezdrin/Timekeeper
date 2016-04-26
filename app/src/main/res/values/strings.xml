@@ -18,4 +18,15 @@
     - To time each participant and operate the green, amber and red “traffic lights” to help them keep to time.\n
     - To provide timing reports when prompted by the Toastmaster.
     </string>
+
+    <string name="skip_button">
+        <u>Skip Onboarding</u>
+    </string>
+    
+    <string-array name="projects">
+        <item>Add new project</item>
+        <item>bthere</item>
+        <item>Outingz</item>
+        <item>Pixel Perfect</item>
+    </string-array>
 </resources>

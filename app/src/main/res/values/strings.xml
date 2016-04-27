@@ -4,13 +4,53 @@
     <string name="got_it">Got It!</string>
     <string name="what_is_this_app_about"> \t The main idea of this app is to help to timekeeper
         to track the meeting time and note who of meeting participants doesn\'t follow meeting
-        agenda. \n\tThis app also allow to gather meetings history and analyze it.
+        agenda. \n\tThis app also allow to gather meetings history and analyze it. \n
 
         \t The main idea of this app is to help to timekeeper
         to track the meeting time and note who of meeting participants doesn\'t follow meeting
-        agenda. \n\tThis app also allow to gather meetings history and analyze it.
+        agenda. \n\tThis app also allow to gather meetings history and analyze it. \n
+
+        \t The main idea of this app is to help to timekeeper
+        to track the meeting time and note who of meeting participants doesn\'t follow meeting
+        agenda. \n\tThis app also allow to gather meetings history and analyze it. \n
+
+        \t The main idea of this app is to help to timekeeper
+        to track the meeting time and note who of meeting participants doesn\'t follow meeting
+        agenda. \n\tThis app also allow to gather meetings history and analyze it. \n
+
+        \t The main idea of this app is to help to timekeeper
+        to track the meeting time and note who of meeting participants doesn\'t follow meeting
+        agenda. \n\tThis app also allow to gather meetings history and analyze it. \n
+
+        \t The main idea of this app is to help to timekeeper
+        to track the meeting time and note who of meeting participants doesn\'t follow meeting
+        agenda. \n\tThis app also allow to gather meetings history and analyze it. \n
     </string>
     <string name="who_is_timekeeper">\t The main purpose of the Timekeeper
+        role is to help the meeting run on schedule by timing each of the
+        participants according to the timings given on the agenda. \n\t
+
+        Also the timekeeper can stop meeting participants speech when meeting participants go out of agenda. \n
+
+        \t The main purpose of the Timekeeper
+        role is to help the meeting run on schedule by timing each of the
+        participants according to the timings given on the agenda. \n\t
+
+        Also the timekeeper can stop meeting participants speech when meeting participants go out of agenda. \n
+
+        \t The main purpose of the Timekeeper
+        role is to help the meeting run on schedule by timing each of the
+        participants according to the timings given on the agenda. \n\t
+
+        Also the timekeeper can stop meeting participants speech when meeting participants go out of agenda. \n
+
+        \t The main purpose of the Timekeeper
+        role is to help the meeting run on schedule by timing each of the
+        participants according to the timings given on the agenda. \n\t
+
+        Also the timekeeper can stop meeting participants speech when meeting participants go out of agenda. \n
+
+        \t The main purpose of the Timekeeper
         role is to help the meeting run on schedule by timing each of the
         participants according to the timings given on the agenda. \n\t
 
@@ -20,7 +60,23 @@
         The main responsibilities of the Timekeeper are: \n
     - To explain the purpose of the Timekeeper role during the meeting.\n
     - To time each participant and operate the green, amber and red “traffic lights” to help them keep to time.\n
-    - To provide timing reports when prompted by the Toastmaster.
+    - To provide timing reports when prompted by the Toastmaster. \n
+
+        The main responsibilities of the Timekeeper are: \n
+    - To explain the purpose of the Timekeeper role during the meeting.\n
+    - To time each participant and operate the green, amber and red “traffic lights” to help them keep to time.\n
+    - To provide timing reports when prompted by the Toastmaster. \n
+
+        The main responsibilities of the Timekeeper are: \n
+    - To explain the purpose of the Timekeeper role during the meeting.\n
+    - To time each participant and operate the green, amber and red “traffic lights” to help them keep to time.\n
+    - To provide timing reports when prompted by the Toastmaster. \n
+
+        The main responsibilities of the Timekeeper are: \n
+    - To explain the purpose of the Timekeeper role during the meeting.\n
+    - To time each participant and operate the green, amber and red “traffic lights” to help them keep to time.\n
+    - To provide timing reports when prompted by the Toastmaster. \n
+
     </string>
 
     <string name="skip_button">

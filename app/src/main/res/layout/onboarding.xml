@@ -32,38 +32,23 @@
 
     <ScrollView android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/skipBtn"
         android:id="@+id/first_tip_scrollview"
         android:layout_above="@id/changeTipBtn"
-        android:scrollIndicators="right">
+        android:layout_below="@id/skipBtn"
+        android:scrollIndicators="right"
+        android:paddingBottom="16dp">
 
-        <LinearLayout
-            android:orientation="vertical" android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/first_tip_layout"
-            android:paddingBottom="16dp"
-            >
+        <TextView
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/what_is_this_app_about"
+            android:textAppearance="@style/tipsFont"
+            />
 
-            <TextView
-                android:padding="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="@string/what_is_this_app_about"
-                android:textAppearance="@style/tipsFont"
-                />
-
-            <TextView
-                android:padding="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-                android:text="@string/who_is_timekeeper"
-                android:textAppearance="@style/tipsFont"
-                />
-
-        </LinearLayout>
     </ScrollView>
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -71,80 +56,42 @@
         android:layout_below="@id/skipBtn"
         android:id="@+id/second_tip_scrollview"
         android:layout_above="@id/changeTipBtn"
+        android:paddingBottom="16dp"
+        android:scrollIndicators="right"
+        android:visibility="invisible"
         >
-        <LinearLayout
-            android:orientation="vertical" android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/second_tip_layout"
-            android:visibility="invisible"
-            android:paddingBottom="16dp"
-            >
 
             <TextView
                 android:padding="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Meeting preparation"
+                android:text="@string/who_is_timekeeper"
                 android:textAppearance="@style/tipsFont"
                 />
 
-            <TextView
-                android:padding="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-                android:text="some text 1"
-                android:textAppearance="@style/tipsFont"
-                />
-
-        </LinearLayout>
     </ScrollView>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/skipBtn"
-        android:layout_above="@id/changeTipBtn">
-        <LinearLayout
-            android:orientation="vertical" android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/third_tip_layout"
-            android:visibility="invisible"
-            android:paddingBottom="16dp"
-            >
+        android:layout_above="@id/changeTipBtn"
+        android:id="@+id/third_tip_scrollview"
+        android:visibility="invisible"
+        android:paddingBottom="16dp"
+        >
 
             <TextView
                 android:padding="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="How to track time"
+                android:text="@string/timekeeper_responsibilities"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="#000000"
                 />
 
-            <TextView
-                android:padding="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="4"
-                android:text="some text 21"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#000000"
-                />
-
-            <TextView
-                android:padding="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="6"
-                android:text="some text 22"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="#000000"
-                />
-
-        </LinearLayout>
     </ScrollView>
 
 </RelativeLayout>

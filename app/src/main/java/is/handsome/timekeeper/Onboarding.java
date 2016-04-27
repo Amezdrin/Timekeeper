@@ -17,9 +17,9 @@ public class Onboarding extends AppCompatActivity {
     /**This switches onboarding screens by click on Next button*/
     public void changeTipFunc(View view) {
 
-        View tipOne = findViewById(R.id.first_tip_layout);
-        View tipTwo = findViewById(R.id.second_tip_layout);
-        View tipThree = findViewById(R.id.third_tip_layout);
+        View tipOne = findViewById(R.id.first_tip_scrollview);
+        View tipTwo = findViewById(R.id.second_tip_scrollview);
+        View tipThree = findViewById(R.id.third_tip_scrollview);
         Button nextBtn = (Button) findViewById(R.id.changeTipBtn);
 
         if (tipOne.getVisibility() == View.GONE && tipTwo.getVisibility() == View.VISIBLE) {

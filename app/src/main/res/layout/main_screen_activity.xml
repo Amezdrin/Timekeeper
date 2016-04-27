@@ -15,7 +15,7 @@
         android:spinnerMode="dropdown"
         android:id="@+id/projectsDropDown"
         android:clickable="true"
-
+        android:prompt="@string/default_spinner_text"
         />
 
 

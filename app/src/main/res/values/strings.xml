@@ -5,6 +5,10 @@
     <string name="what_is_this_app_about"> \t The main idea of this app is to help to timekeeper
         to track the meeting time and note who of meeting participants doesn\'t follow meeting
         agenda. \n\tThis app also allow to gather meetings history and analyze it.
+
+        \t The main idea of this app is to help to timekeeper
+        to track the meeting time and note who of meeting participants doesn\'t follow meeting
+        agenda. \n\tThis app also allow to gather meetings history and analyze it.
     </string>
     <string name="who_is_timekeeper">\t The main purpose of the Timekeeper
         role is to help the meeting run on schedule by timing each of the
@@ -23,10 +27,7 @@
         <u>Skip Onboarding</u>
     </string>
     
-    <string-array name="projects">
-        <item>Add new project</item>
-        <item>bthere</item>
-        <item>Outingz</item>
-        <item>Pixel Perfect</item>
-    </string-array>
+    <string name="default_spinner_text">Tap to add/select a project</string>
+
+
 </resources>

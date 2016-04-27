@@ -28,11 +28,9 @@ public class MainScreenActivity extends Activity implements AdapterView.OnItemSe
 
             // Spinner Drop down elements
             List<String> categories = new ArrayList<String>();
-            categories.add("Add new project");
-            categories.add("bthere");
-            categories.add("Outingz");
-            categories.add("Pixel Perfect");
-            categories.add("Ercot");
+            categories.add("first project");
+            categories.add("second project");
+            categories.add("third project");
 
             // Creating adapter for spinner
             ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);

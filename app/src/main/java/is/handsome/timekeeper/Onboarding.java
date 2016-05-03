@@ -1,8 +1,8 @@
 package is.handsome.timekeeper;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -27,6 +27,7 @@ public class Onboarding extends AppCompatActivity {
             tipTwo.setVisibility(View.GONE);
             tipThree.setVisibility(View.VISIBLE);
             nextBtn.setText("Got It!");
+
         }
         else {
 
@@ -41,11 +42,12 @@ public class Onboarding extends AppCompatActivity {
     /**This opens main screen by click on Got It! button*/
     public void openMainScreen(View view) {
 
-        Intent openMainScreen = new Intent(Onboarding.this, MainScreenActivity.class);
+        Intent openMainScreen = new Intent(this, MainScreenActivity.class);
         startActivity(openMainScreen);
         finish();
     }
 }
+
 
 
 

@@ -1,60 +1,85 @@
 package is.handsome.timekeeper;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemSelectedListener;
+import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.view.KeyEvent;
+import android.view.View.OnKeyListener;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class MainScreenActivity extends Activity implements AdapterView.OnItemSelectedListener {
+public class MainScreenActivity extends Activity {
+    //public class MainScreenActivity extends Activity implements AdapterView.OnItemSelectedListener {
+
+
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.main_screen_activity);
-
-            // Spinner element
-            Spinner spinner = (Spinner) findViewById(R.id.projectsDropDown);
-
-            // Spinner click listener
-            spinner.setOnItemSelectedListener(this);
-
-            // Spinner Drop down elements
-            List<String> categories = new ArrayList<String>();
-            categories.add("first project");
-            categories.add("second project");
-            categories.add("third project");
-
-            // Creating adapter for spinner
-            ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
-
-            // Drop down layout style - list view with radio button
-            dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-            // attaching data adapter to spinner
-            spinner.setAdapter(dataAdapter);
         }
 
-        @Override
-        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            // On selecting a spinner item
-            String item = parent.getItemAtPosition(position).toString();
+    private void openAddProjectScreenFunc() {
 
-            // Showing selected spinner item
-            Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
-        }
+        Intent openAddProjectScreen = new Intent(this, AddProject.class);
+        startActivity(openAddProjectScreen);
+        finish();
+    }
 
-        public void onNothingSelected(AdapterView<?> arg0) {
-            // TODO Auto-generated method stub
-        }
+    public void addNewProject(View view) {
+
+        final RelativeLayout projectsList = (RelativeLayout) findViewById(R.id.projectsList);
+
+        final EditText newProject = new EditText(this);
+        newProject.setId (R.id.newProjectField);
+
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams (RelativeLayout.LayoutParams.MATCH_PARENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT);
+
+        lp.addRule (RelativeLayout.BELOW);
+        newProject.setLayoutParams(lp);
 
 
+        projectsList.addView(newProject);
+
+
+        /*for(int i=0; i<100;i++) {
+
+
+            newProject.setOnEditorActionListener(new EditText.OnEditorActionListener() {
+                public boolean onEditorAction(TextView v, int actionId,
+                                              KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_GO) {
+
+                        return true;
+                    }
+                    return false;
+                }
+            });
+        }*/
+    }
 }
+
+
+        /**
+        for( int i = 0; i < 100; i++ )
+        {
+
+            EditText newProject = new EditText(this);       //возможно, использовать массив?
+            newProject.setLayoutParams(new RelativeLayout.LayoutParams
+                    (ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+            newProject.setEnabled(true);
+            newProject.setVisibility(View.VISIBLE);
+            newProject.setClickable(true);
+            projectsList.addView(newProject);
+            projectName = newProject.getText().toString();
+        }*/
+
 

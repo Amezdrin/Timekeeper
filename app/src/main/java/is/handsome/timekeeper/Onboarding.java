@@ -21,13 +21,16 @@ public class Onboarding extends AppCompatActivity {
         View tipTwo = findViewById(R.id.second_tip_scrollview);
         View tipThree = findViewById(R.id.third_tip_scrollview);
         Button nextBtn = (Button) findViewById(R.id.changeTipBtn);
+        Button gotItBtn = (Button) findViewById(R.id.gotItBtn);
 
         if (tipOne.getVisibility() == View.GONE && tipTwo.getVisibility() == View.VISIBLE) {
 
             tipTwo.setVisibility(View.GONE);
             tipThree.setVisibility(View.VISIBLE);
-            nextBtn.setText("Got It!");
-
+            nextBtn.setVisibility(View.GONE);
+            nextBtn.setEnabled(false);
+            gotItBtn.setVisibility(View.VISIBLE);
+            gotItBtn.setEnabled(true);
         }
         else {
 

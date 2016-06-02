@@ -85,7 +85,7 @@
 
     <string name="default_spinner_text">Tap to add/select a project</string>
 
-    <string name="meeting_settings">Meeting settings</string>
+    <string name="meeting_settings">Click to Set Project Name</string>
 
     <string name="project_name_hint">Project Name</string>
     <string name="add_speaker">Add speaker</string>
